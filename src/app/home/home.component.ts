@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,15 @@ import { FormControl, Validators } from '@angular/forms';
   styleUrl: './home.component.css'
 
 })
-export class HomeComponent {
- 
+export class HomeComponent implements OnInit {
+  constructor(
+    public router: Router) {
+  }
+
+  ngOnInit(): void {
+
+  }
+  loadShop() {
+    this.router.navigate(['/shop']);
+  }
 }

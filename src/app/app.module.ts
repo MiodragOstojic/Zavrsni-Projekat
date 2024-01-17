@@ -9,13 +9,12 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
-import { RouterModule } from '@angular/router';
 import { MatInputModule } from '@angular/material/input';
 import { ShopComponent } from './shop/shop.component';
 import { CategoryComponent } from './category/category.component';
-import { ProductComponent } from './product/product.component'; // Dodajte ovaj import ako koristite mat-input
+import { ProductComponent } from './product/product.component'; 
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
