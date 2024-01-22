@@ -83,7 +83,7 @@
         </div>
     </div>
     <div class="text-center ">
-        <button type="button" class="btn btn-outline-secondary" (click)="loadShop()" >Load More</button>
+        <button type="button" class="btn btn-outline-secondary" (click)="loadShop()">Load More</button>
     </div>
 </div>
 
@@ -104,15 +104,44 @@
         </div>
 
         <div class="col-6">
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <mat-label for="name">Name:</mat-label>
+                        <input type="text" id="name" class="form-control form-control-no-border" ngModel name="name">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <mat-label for="email">eMail:</mat-label>
+                        <input type="text" id="email" class="form-control form-control-no-border" ngModel name="eMail">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <mat-label for="name">Subject:</mat-label>
+                <input type="text" id="subject" class="form-control form-control-no-border" ngModel name="subject">
+            </div>
+            <div class="form-group">
+                <mat-label for="message">Message:</mat-label>
+                <textarea type="message" cols="2" rows="2" id="message" class="form-control form-control-no-border"
+                    ngModel name="subject"></textarea>
+            </div>
+            <div class="text-center mt-2"> <button types="submit" class="btn btn-light sendBtn">Send</button></div> <br>
+            <p>Get our newsletters</p>
+            <div class="row">
+                <div class="form-group col-6">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" class="form-control" ngModel name="eMail"placeholder="Enter your email here">
+                    <button type="submit" class="btn btn-dark">Subscribe Now</button>
 
 
+                </div>
+            </div>
 
         </div>
-
     </div>
 </div>
-
-
 <div class="container-fluid mt-5">
     <div class="row  d-flex p-0">
         <div class="col-6 sec4 m-0">

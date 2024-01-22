@@ -15,6 +15,16 @@ import { ShopComponent } from './shop/shop.component';
 import { CategoryComponent } from './category/category.component';
 import { ProductComponent } from './product/product.component'; 
 import { FormsModule } from '@angular/forms';
+import { SimpathyComponent } from './shop/simpathy/simpathy.component';
+import { AnniversaryComponent } from './shop/anniversary/anniversary.component';
+import { CongrationsComponent } from './shop/congrations/congrations.component';
+import { GetWellComponent } from './shop/get-well/get-well.component';
+import { LoginComponent } from './login/login.component';
+import { SingupComponent } from './singup/singup.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { ProductOrderComponent } from './product-order/product-order.component';
+import { UsersComponent } from './users/users.component';
+import { ModelsComponent } from './models/models.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +36,16 @@ import { FormsModule } from '@angular/forms';
     ShopComponent,
     CategoryComponent,
     ProductComponent,
+    SimpathyComponent,
+    AnniversaryComponent,
+    CongrationsComponent,
+    GetWellComponent,
+    LoginComponent,
+    SingupComponent,
+    ShoppingCartComponent,
+    ProductOrderComponent,
+    UsersComponent,
+    ModelsComponent,
   ],
   imports: [
     BrowserModule,

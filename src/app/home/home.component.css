@@ -7,3 +7,10 @@
 .sec4{
     background-color: lightcoral;
 }
+.form-control-no-border {
+    border: none;
+    border-bottom: 1px solid #000;
+}
+.sendBtn{
+    border: 2px solid rgb(83, 74, 74);
+}

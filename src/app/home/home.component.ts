@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { FormControl, Validators } from '@angular/forms';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormControl, NgForm, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-home',
@@ -18,5 +19,8 @@ export class HomeComponent implements OnInit {
   }
   loadShop() {
     this.router.navigate(['/shop']);
+  }
+  loadLogin() {
+    this.router.navigate(['/login']);
   }
 }
