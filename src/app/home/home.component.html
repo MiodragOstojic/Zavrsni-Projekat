@@ -89,7 +89,7 @@
 
 <div class="container mt-3 mb-3">
     <div class="row m-0 d-flex">
-        <div class="col-6">
+        <div class="col-md-6">
             <p>Send us a message <br>
                 A: Laze Nanica 7,21000 Novi Sad</p>
             <p>T:021/422-022</p>
@@ -105,58 +105,57 @@
 
         <div class="col-6">
             <div class="row">
-                <div class="col-6">
+                <div class="col-md-6">
                     <div class="form-group">
-                        <mat-label for="name">Name:</mat-label>
-                        <input type="text" id="name" class="form-control form-control-no-border" ngModel name="name">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" class="form-control form-control-no-border" name="name">
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="form-group">
-                        <mat-label for="email">eMail:</mat-label>
-                        <input type="text" id="email" class="form-control form-control-no-border" ngModel name="eMail">
+                        <label for="email">eMail:</label>
+                        <input type="text" id="email" class="form-control form-control-no-border" name="eMail">
                     </div>
                 </div>
             </div>
             <div class="form-group">
-                <mat-label for="name">Subject:</mat-label>
-                <input type="text" id="subject" class="form-control form-control-no-border" ngModel name="subject">
+                <label for="name">Subject:</label>
+                <input type="text" id="subject" class="form-control form-control-no-border" name="subject">
             </div>
             <div class="form-group">
-                <mat-label for="message">Message:</mat-label>
+                <label for="message">Message:</label>
                 <textarea type="message" cols="2" rows="2" id="message" class="form-control form-control-no-border"
-                    ngModel name="subject"></textarea>
+                    name="subject"></textarea>
             </div>
             <div class="text-center mt-2"> <button types="submit" class="btn btn-light sendBtn">Send</button></div> <br>
-            <p>Get our newsletters</p>
-            <div class="row">
-                <div class="form-group col-6">
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" class="form-control" ngModel name="eMail"placeholder="Enter your email here">
-                    <button type="submit" class="btn btn-dark">Subscribe Now</button>
-
-
+            <p>Get our newsletters</p> 
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                    <label for="email"></label>
+                    <input type="text" id="email" class="form-control" name="eMail" placeholder="Enter your email here">
                 </div>
-            </div>
+                <div class="col-auto">
+                  <span class="form-text">
+                    <button type="submit" class="btn btn-dark mt-3">Subscribe Now</button>
+                  </span>
+                </div>
+              </div>
 
         </div>
     </div>
 </div>
 <div class="container-fluid mt-5">
-    <div class="row  d-flex p-0">
-        <div class="col-6 sec4 m-0">
-            <div class="text-center text-white mt-5 p-3">
+    <div class="row ">
+        <div class="col-md-6 sec4">
+            <div class="text-center text-white mt-5 ">
                 <h2>Send Get Well Wishes</h2>
-                <p>brighten their recovery with beautiful florals, plants and gifts that will express your well wishes.
-                </p>
-                <button type="button" class="btn btn-secondary rounded">SHOP GET WELL FLOWERS & GIFTS</button>
+                <p>Brighten their recovery with beautiful florals, plants and gifts that willexpress your well wishes</p>
+                <button type="button" class="btn btn-secondary rounded">SHOP GET WELL FLOWERS & GIFTS </button>
             </div>
-
         </div>
 
-        <div class="col-6">
+        <div class="col-md-6">
             <img src="assets/Resursi/imgs/FTD_SplitBanner_Merx_1.png" class="img-fluid" alt="">
-
         </div>
     </div>
 </div>

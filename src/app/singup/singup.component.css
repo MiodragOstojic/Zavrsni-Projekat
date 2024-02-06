@@ -1,0 +1,6 @@
+input.ng-required.ng-touched{
+    border: 1px solid red;
+}
+.error-msg{
+    color:red;
+}

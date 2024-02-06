@@ -1,1 +1,13 @@
-<p>product works!</p>
+<div class="container" *ngIf="currentProduct">
+<div class="row">
+    <div class="col-md-4">
+        <img [src]="currentProduct.imgSrc" alt="" class="img-fluid">
+    </div>
+    <div class="col-md-8">
+        <h3>{{currentProduct.name}}</h3>
+        <h4>{{currentProduct.price}}</h4>
+        <input type="number" min="0" max="99" class="form-control" #quantity>
+        <button class="btn btn-dark" (click)="addToCart(quantity.value)">Add to Cart</button>
+    </div>
+</div>
+</div>

@@ -1,0 +1,11 @@
+{
+    "products":[
+        {
+            "id":1,
+            "name": "Beautiful Spirit Basket",
+            "price":105 ,
+            "imgSrc": "assets/Resursi/products/simpathy/product1.PNG",
+            "categoryId": 1
+        }
+    ]
+}

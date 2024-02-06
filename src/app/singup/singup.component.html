@@ -1,1 +1,45 @@
-<p>singup works!</p>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 position-relative">
+            <img src="assets/Resursi/imgs/loginBackground.jpg" class="img-fluid" alt="">
+            <div class="position-absolute top-50 start-50 translate-middle">
+                <div class="text-center mb-3">
+                    <h1 class="fw-bold">Sign Up </h1>
+                </div>
+                <form (ngSubmit)="onSingup(myForm)" #myForm="ngForm">
+
+                    <div class="mb-3 form-group col-md-">
+                        <label for="name">First Name</label>
+                        <input id="name" type="text" class="form-control" ngModel #name="ngModel" name="name" required minlength="5">
+                        <span class="error-msg" *ngIf="name.errors?.['required']">Name is required</span>
+                    </div>
+                    <div class="mb-3 form-group col-md-12">
+                        <label for="surname">Last Name</label>
+                        <input id="surname" type="text" class="form-control" ngModel #surname="ngModel" name="surname" required minlength="5">
+                        <span class="error-msg" *ngIf="surname.errors?.['required']">Surname is required</span>
+                    </div>
+                    <div class="mb-3 form-group col-md-12">
+                        <label for="Email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" ngModel name="email" required email #email="ngModel">
+                        <span class="error-msg" *ngIf="!email.valid && email.touched">eMail must be valid</span>
+                        <span class="error-msg" *ngIf="email.errors?.['required']">eMail is required</span>
+                    </div>
+                    <div class="mb-3 form-group col-md-12">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="password" name="password" minlength="5" required ngModel #password="ngModel" class="form-control">
+                        <span class="error-msg" *ngIf="password.errors?.['required']">Password is required</span>
+                        <span class="error-msg" *ngIf="!password.valid && password.touched">Password must be min 5 characters</span>
+                    </div>
+                    <div class="mb-3">
+                        <a href="" class="link-dark"> Forgot Password</a><br>
+                        <div class="d-grid gap-2 col-md-12 mx-auto">
+                            <button class="btn btn-secondary" type="submit">Sign Up</button>
+                            <p>Already a member? <a routerLink="/login" class="link-dark">Log In</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

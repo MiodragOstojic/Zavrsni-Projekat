@@ -14,7 +14,7 @@ import { MatInputModule } from '@angular/material/input';
 import { ShopComponent } from './shop/shop.component';
 import { CategoryComponent } from './category/category.component';
 import { ProductComponent } from './product/product.component'; 
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SimpathyComponent } from './shop/simpathy/simpathy.component';
 import { AnniversaryComponent } from './shop/anniversary/anniversary.component';
 import { CongrationsComponent } from './shop/congrations/congrations.component';
@@ -23,8 +23,10 @@ import { LoginComponent } from './login/login.component';
 import { SingupComponent } from './singup/singup.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { ProductOrderComponent } from './product-order/product-order.component';
-import { UsersComponent } from './users/users.component';
-import { ModelsComponent } from './models/models.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { AboutComponent } from './about/about.component';
+
 
 @NgModule({
   declarations: [
@@ -44,8 +46,9 @@ import { ModelsComponent } from './models/models.component';
     SingupComponent,
     ShoppingCartComponent,
     ProductOrderComponent,
-    UsersComponent,
-    ModelsComponent,
+    AboutComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -55,6 +58,9 @@ import { ModelsComponent } from './models/models.component';
     FormsModule,
     MatIconModule,
     MatInputModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    HttpClientModule,HttpClientInMemoryWebApiModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,11 @@
-<p>category works!</p>
+<div class="row">
+    <div class="col-13" *ngFor="let prod of allProducts">
+        <div class="stil1" (click)="selectProduct(prod)">
+        <img [src]="prod.imgSrc" [alt]="prod.name" class="img-fluid">
+        <h4>{{prod.name}}</h4>
+        <h5>{{prod.price}}<span class="material-symbols-outlined">
+            attach_money
+            </span></h5>
+        </div>
+    </div>
+</div>

@@ -10,18 +10,18 @@
         <a class="navbar-brand" href="#"> <img src="assets/Resursi/imgs/flowerLogo.png" class="logoImg" alt=""></a>
       </div>
       <div>
-        <ul class="nav col-6 col-md-auto mb-2 justify-content-center">
+        <ul class="nav col-6 col-md-auto mb-2 justify-content-center stil1">
           <li><a routerLink="/" class="nav-link px-2 link-secondary">Home</a></li>
-          <li><a href="#" class="nav-link px-2 link-secondary">About</a></li>
+          <li><a routerLink="/about" class="nav-link px-2 link-secondary">About</a></li>
           <li><a routerLink="/shop" class="nav-link px-2 link-secondary">Shop</a></li>
           <li><a href="#" class="nav-link px-2 link-secondary">Contact</a></li>
         </ul>
-      </div>
+      </div> 
       <div>
-        <ul class="nav col-6 col-md-auto mb-2 justify-content-center">
+        <ul class="nav col-6 col-md-auto mb-2 justify-content-center ">
           <mat-icon>account_circle</mat-icon>
           <li><a routerLink="/login" class="nav-link px-2 link-secondary list-unstyled ">Login</a></li>
-          <mat-icon>shopping_cart</mat-icon>
+        <a routerLink="/shopping-cart">  <mat-icon>shopping_cart</mat-icon> {{shopNumber}} </a>  <!--  {{shopNumber}} -->
         </ul>
       </div>
     </div>
